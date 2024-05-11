@@ -1,0 +1,387 @@
+
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;  border: none;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition:.2s linear;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x:hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+header{
+    position:fixed;
+    top: 0; left: 0; right:0;
+    height:100px;  line-height:80px;  margin:0;
+    background-color: rgba(215, 185, 177, 0.447);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color:rgb(111, 21, 42);
+    font-weight: bolder;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    position: relative;
+    margin-right: 30px;
+}
+
+.navbar ul li :last-child{
+    margin-right: 0;
+}
+
+.navbar ul li a{
+    
+    padding: 22px 15px;
+    color: rgb(17, 18, 21);
+}
+
+.navbar ul li a:hover{
+color:rgba(20, 143, 6, 0.998);
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 120px;
+    background-color: rgba(215, 185, 177, 0.447);
+    box-shadow: 0 20px 45px  rgba(0, 0, 0, 0.1);
+    top: 112%;    line-height: 30px;
+    left: 0;
+    margin: top 0;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+.dropdown-menu ul{
+    list-style: none;
+    display: block;
+}
+ul li:hover .dropdown-menu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+ul .dropdown-menu li{
+    margin: 0;
+    width: 100;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+ul .dropdown-menu li a{
+    padding: 15px 10px ;
+    display: block;
+    width: 100%;
+    text-align: left;;
+}
+
+.icons a{
+    font-size: 24px;
+    padding: 1rem 1rem;
+    color: rgb(240, 232, 227);
+}
+
+.fa-heart:hover{
+    color: rgb(160, 16, 16);
+}
+.fa-shopping-cart:hover{ 
+    color: rgb(33, 165, 53);
+}
+.fa-user:hover{
+    color: rgba(156, 33, 19, 0.904);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(yoab-anderson-IHC5LPAoGrs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    color:rgba(72, 18, 31, 0.669);
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color:rgba(252, 251, 251, 0.721);
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+.home .content button{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 4rem;
+    background: rgba(169, 88, 79, 0.813);
+    color: rgba(239, 227, 221, 0.845);
+    padding: 0.9rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home .content button:hover{
+    background:rgba(42, 77, 38, 0.71);
+}
+
+.women{
+    display: flex;
+    align-items: center;
+    min-height: 100vh; 
+    background-image: url(woodwatch-kSbgs5UPAxo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.women .content{
+    max-width: 7rem;
+}
+
+.women .content h3{
+    font-size: 3rem;
+    color: rgba(225, 207, 207, 0.721);
+}
+
+input [type="radio"]{
+display: none;
+}
+
+label{
+    margin-top: 1rem;
+    position: relative;
+    color:  rgba(0, 0, 0, 0.774);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    background: rgba(199, 157, 157, 0.721);
+    border-radius: 4rem;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+}
+
+label :before{
+    content: "";
+    height: 30px;  width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.new-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(152, 79, 39, 0.511);
+}
+.new-products h2{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    color:rgb(111, 21, 42);
+}
+.new-products .box-container{
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 30%; 
+    margin-bottom: 150px; 
+}
+
+.box .image img {
+    width: 100%; 
+    height: auto; 
+}
+
+.box .content {
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.classic-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(152, 79, 39, 0.511);
+}
+.classic-products h2{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    color:rgb(111, 21, 42);
+}
+.classic-products .box-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sport-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:rgba(152, 79, 39, 0.511);
+}
+.sport-products h2{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    color:rgb(111, 21, 42);
+}
+.sport-products .box-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgba(152, 79, 39, 0.511);
+    background-size: contain;
+}
+
+.about .content h2{
+    padding: 0 2rem;
+    color:rgb(111, 21, 42);
+}
+
+.about P{
+    font-size: 1rem;
+    color:rgb(45, 45, 46);
+    padding: 2rem 0;
+    line-height: 1.4;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(152, 79, 39, 0.511);
+    background-size: contain;
+}
+
+.contact .content h2{
+    padding: 0 2rem;
+    color: rgb(111, 21, 42);
+}
+
+.contact p{
+    font-size: 1rem;
+    color:rgb(45, 45, 46);
+    padding: 0.5rem 0;
+    line-height: 1;
+}
+
+.contact h3{
+    padding: 0 2rem;
+    color: rgb(111, 21, 42);
+}
+.contact h4{
+    font-size: 1.2rem;
+    color:rgba(45, 45, 46, 0.854);
+    padding: 0.5rem 0;
+    line-height: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact .row form .box{
+    padding: 0.9rem 0.8rem;
+    font-size: 1rem;
+    text-transform: none;
+    background: rgba(111, 21, 42, 0.493); 
+    color: rgb(1, 1, 1);
+    border-radius: 1rem; 
+    margin: .7rem 0;
+    cursor: pointer;
+}
+.contact .row form .box::placeholder {
+    font-size: 1rem; 
+    color: #070707; 
+}
+
+.contact .row form .btn {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+    background-color: rgba(111, 21, 42, 0.493);
+    border: none; 
+    border-radius: 4rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.contact .row form .btn:hover {
+    background-color: #18802bda; 
+}
+
+.men{
+    display: flex;
+    align-items: center;
+    min-height: 100vh; width: 100vw;
+    background-image: url(bradley-ziffer-umLlSREhfp0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.men h3{
+    font-size: 3rem;
+    color: rgba(239, 224, 217, 0.653);
+}
+.men h2{
+    font-size: 2.5rem;
+    color:rgb(111, 21, 42);
+}
+.men .row p{
+    font-size: 1.3rem;
+    color: rgba(247, 225, 220, 0.9);
+}
+
+.men .content {
+    width : 300px;
+    padding: 25px;
+}
+
+.men .content .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+.men label{
+    position: relative
+    width 10px; height: 10px;
+}
+.men input{
+    width: 100%; height: 100%;
+    position: absolute;
+}
